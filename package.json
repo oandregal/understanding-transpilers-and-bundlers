@@ -19,7 +19,9 @@
     "transpile:closure:export-default": "google-closure-compiler src/export-default.js --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/export-default.js",
     "transpile:closure:import-default": "google-closure-compiler src/import-default.js src/export-default.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/import-default.js",
     "transpile:closure:export-named": "google-closure-compiler src/export-named.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/export-named.js",
-    "transpile:closure:import-named": "google-closure-compiler src/import-named.js src/export-named.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/import-named.js"
+    "transpile:closure:import-named": "google-closure-compiler src/import-named.js src/export-named.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/import-named.js",
+    "transpile:closure:export-default-and-named": "google-closure-compiler src/export-default-and-named.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/export-default-and-named.js",
+    "transpile:closure:import-default-and-named": "google-closure-compiler src/import-default-and-named.js src/export-default.js src/export-default-and-named.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/import-default-and-named.js"
   },
   "author": "nosolosw",
   "license": "GPL-3.0"
