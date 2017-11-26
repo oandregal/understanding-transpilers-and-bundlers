@@ -5,11 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "babel-cli": "6.26.0",
+    "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.1",
     "google-closure-compiler": "20171112.0.0",
     "npm-run-all": "4.1.2",
     "npx": "9.7.1",
-    "prettier": "1.8.2"
+    "prettier": "1.8.2",
+    "webpack": "3.8.1"
   },
   "scripts": {
     "transpile": "run-p transpile:*",
