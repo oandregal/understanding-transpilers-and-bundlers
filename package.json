@@ -1,5 +1,5 @@
 {
-  "name": "understanding-transpilers",
+  "name": "understanding-transpilers-and-bundlers",
   "version": "0.0.1",
   "description": "Playground to understand the code generated from different transpilers.",
   "main": "index.js",
@@ -17,7 +17,9 @@
     "transpile:closure": "run-p transpile:closure:*",
     "transpile:closure:arrow-functions": "google-closure-compiler src/arrow-functions.js --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/arrow-functions.js",
     "transpile:closure:export-default": "google-closure-compiler src/export-default.js --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/export-default.js",
-    "transpile:closure:import-default": "google-closure-compiler src/import-default.js src/export-default.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/import-default.js"
+    "transpile:closure:import-default": "google-closure-compiler src/import-default.js src/export-default.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/import-default.js",
+    "transpile:closure:export-named": "google-closure-compiler src/export-named.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/export-named.js",
+    "transpile:closure:import-named": "google-closure-compiler src/import-named.js src/export-named.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > dst/closure/import-named.js"
   },
   "author": "nosolosw",
   "license": "GPL-3.0"
