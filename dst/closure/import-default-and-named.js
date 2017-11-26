@@ -8,5 +8,5 @@ module$src$export_default_and_named.default = $jscompDefaultExport$$module$src$e
 // Input 2
 console.log('BAR is ', module$src$export_default.default.BAR);
 console.log('FOO is ', module$src$export_default.default.FOO);
-console.log('FOOBAR is ', module$src$export_default_and_named.FOOBAR);
+console.log('FOOBAR is ', module$src$export_default_and_named.foobar);
 

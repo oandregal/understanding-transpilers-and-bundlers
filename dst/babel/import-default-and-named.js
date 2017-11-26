@@ -10,4 +10,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 console.log("BAR is ", _exportDefault2.default.BAR);
 console.log("FOO is ", _exportDefault2.default.FOO);
-console.log("FOOBAR is ", _exportDefaultAndNamed.FOOBAR);
+console.log("FOOBAR is ", _exportDefaultAndNamed.foobar);

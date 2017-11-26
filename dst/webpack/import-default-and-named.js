@@ -76,7 +76,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 console.log("BAR is ", __WEBPACK_IMPORTED_MODULE_0__export_default__["a" /* default */].BAR);
 console.log("FOO is ", __WEBPACK_IMPORTED_MODULE_0__export_default__["a" /* default */].FOO);
-console.log("FOOBAR is ", __WEBPACK_IMPORTED_MODULE_1__export_default_and_named__["FOOBAR"]);
+console.log("FOOBAR is ", __WEBPACK_IMPORTED_MODULE_1__export_default_and_named__["a" /* foobar */]);
 
 /***/ }),
 /* 1 */
@@ -101,7 +101,7 @@ const constants = {
 };
 
 const foobar = 3;
-/* unused harmony export foobar */
+/* harmony export (immutable) */ __webpack_exports__["a"] = foobar;
 
 /* unused harmony default export */ var _unused_webpack_default_export = (constants);
 
