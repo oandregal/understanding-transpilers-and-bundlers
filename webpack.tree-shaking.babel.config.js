@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   entry: "./src/tree-shaking.js",
   output: {
-    filename: "./dst/webpack/tree-shaking.js"
+    filename: "./examples/tree-shaking.webpack.js"
   },
   module: {
     rules: [

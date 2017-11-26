@@ -3,4 +3,5 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var FOUR = exports.FOUR = 4;
+var BAR = exports.BAR = 1;
+var FOO = exports.FOO = 2;

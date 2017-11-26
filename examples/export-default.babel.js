@@ -3,4 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var TWO = exports.TWO = 2;
+var constants = {
+  BAR: 1,
+  FOO: 2
+};
+
+exports.default = constants;

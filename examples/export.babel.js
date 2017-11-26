@@ -8,4 +8,5 @@ var constants = {
   FOO: 2
 };
 
+var foobar = exports.foobar = 3;
 exports.default = constants;

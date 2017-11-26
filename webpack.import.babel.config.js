@@ -1,9 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/import-default-and-named.js",
+  entry: "./src/import.js",
   output: {
-    filename: "./dst/webpack/import-default-and-named.js"
+    filename: "./examples/import.webpack.js"
   },
   module: {
     rules: [
