@@ -69,14 +69,14 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__export_default__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__export__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__export_default_source__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__export_source__ = __webpack_require__(2);
 
 
 
-console.log("BAR is ", __WEBPACK_IMPORTED_MODULE_0__export_default__["a" /* default */].BAR);
-console.log("FOO is ", __WEBPACK_IMPORTED_MODULE_0__export_default__["a" /* default */].FOO);
-console.log("FOOBAR is ", __WEBPACK_IMPORTED_MODULE_1__export__["a" /* foobar */]);
+console.log('BAR is ', __WEBPACK_IMPORTED_MODULE_0__export_default_source__["a" /* default */].BAR);
+console.log('FOO is ', __WEBPACK_IMPORTED_MODULE_0__export_default_source__["a" /* default */].FOO);
+console.log('FOOBAR is ', __WEBPACK_IMPORTED_MODULE_1__export_source__["a" /* foobar */]);
 
 /***/ }),
 /* 1 */

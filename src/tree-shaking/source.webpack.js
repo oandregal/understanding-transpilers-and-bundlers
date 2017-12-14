@@ -69,22 +69,22 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_constant_1__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants_constant_2__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_constant_3__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constant_4__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constant_5__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constant_1__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant_2__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constant_3__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constant_4__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constant_5__ = __webpack_require__(5);
 
 
 
 
 
 
-console.log("ONE is ", __WEBPACK_IMPORTED_MODULE_0__constants_constant_1__["a" /* ONE */]);
-console.log("TWO is ", __WEBPACK_IMPORTED_MODULE_1__constants_constant_2__["a" /* TWO */]);
+console.log('ONE is ', __WEBPACK_IMPORTED_MODULE_0__constant_1__["a" /* ONE */]);
+console.log('TWO is ', __WEBPACK_IMPORTED_MODULE_1__constant_2__["a" /* TWO */]);
 // don't use the imported THREE variable
-console.log("FOUR is ", __WEBPACK_IMPORTED_MODULE_3__constants_constant_4__["a" /* FOUR */]);
-console.log("FIVE is ", __WEBPACK_IMPORTED_MODULE_4__constants_constant_5__["a" /* FIVE */]);
+console.log('FOUR is ', __WEBPACK_IMPORTED_MODULE_3__constant_4__["a" /* FOUR */]);
+console.log('FIVE is ', __WEBPACK_IMPORTED_MODULE_4__constant_5__["a" /* FIVE */]);
 
 /***/ }),
 /* 1 */

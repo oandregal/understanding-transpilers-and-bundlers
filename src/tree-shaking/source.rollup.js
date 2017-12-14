@@ -8,8 +8,8 @@ const FOUR = 4;
 
 const FIVE = 5;
 
-console.log("ONE is ", ONE);
-console.log("TWO is ", TWO);
+console.log('ONE is ', ONE);
+console.log('TWO is ', TWO);
 // don't use the imported THREE variable
-console.log("FOUR is ", FOUR);
-console.log("FIVE is ", FIVE);
+console.log('FOUR is ', FOUR);
+console.log('FIVE is ', FIVE);
