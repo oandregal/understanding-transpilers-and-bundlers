@@ -5,7 +5,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: './src/react-helloworld/input.jsx',
   output: {
-    filename: './src/react-helloworld/output.webpack.babel.prod.uglify.js',
+    filename:
+      './src/react-helloworld/output.webpack.babel.prod.scope.uglify.js',
   },
   module: {
     rules: [
@@ -19,6 +20,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new UglifyJsPlugin(),
   ],
   resolve: {
