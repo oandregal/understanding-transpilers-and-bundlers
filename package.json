@@ -30,6 +30,8 @@
     "do:import:closure": "google-closure-compiler src/import/input.js src/export/input.js src/export-default/input.js --module_resolution=NODE --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > src/import/output.closure.js",
     "do:import:rollup": "rollup src/import/input.js -o src/import/output.rollup.js -f cjs",
     "do:import:webpack": "webpack --config src/import/webpack.babel.js",
+    "predo:react-analyze-bundles": "webpack --config src/react-helloworld/webpack.babel.prod.scope.uglify.js --profile --json > stats.json",
+    "do:react-analyze-bundles": "webpack-bundle-analyzer stats.json .",
     "do:react": "run-p do:react:*",
     "do:react:babel": "babel --plugins syntax-jsx,transform-react-jsx src/react-helloworld/input.jsx -o src/react-helloworld/output.babel.js",
     "do:react:webpack": "webpack --config src/react-helloworld/webpack.babel.js",
@@ -63,6 +65,7 @@
     "react-dom": "16.2.0",
     "rollup": "0.52.1",
     "uglifyjs-webpack-plugin": "1.1.4",
-    "webpack": "3.10.0"
+    "webpack": "3.10.0",
+    "webpack-bundle-analyzer": "2.9.1"
   }
 }
