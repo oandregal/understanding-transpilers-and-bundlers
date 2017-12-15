@@ -36,7 +36,10 @@
     "do:tree-shaking:rollup": "rollup src/tree-shaking/input.js -o src/tree-shaking/output.rollup.js -f cjs",
     "do:tree-shaking:webpack": "webpack --config src/tree-shaking/webpack.babel.js",
     "do:tree-shaking:webpack-minify": "webpack --config src/tree-shaking/webpack.babel.minify.js",
-    "do:tree-shaking:webpack-uglify": "webpack --config src/tree-shaking/webpack.babel.uglify.js"
+    "do:tree-shaking:webpack-minify-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.minify.scopehoisting.js",
+    "do:tree-shaking:webpack-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.scopehoisting.js",
+    "do:tree-shaking:webpack-uglify": "webpack --config src/tree-shaking/webpack.babel.uglify.js",
+    "do:tree-shaking:webpack-uglify-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.uglify.scopehoisting.js"
   },
   "dependencies": {
     "babel-cli": "6.26.0",
