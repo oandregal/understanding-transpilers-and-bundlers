@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/tree-shaking/source.js',
+  entry: './src/import/input.js',
   output: {
-    filename: './src/tree-shaking/source.webpack.js',
+    filename: './src/import/output.webpack.babel.js',
   },
   module: {
     rules: [

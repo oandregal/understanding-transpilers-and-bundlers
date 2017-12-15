@@ -1,5 +1,5 @@
-import constants from '../export-default/source';
-import { foobar } from '../export/source';
+import constants from '../export-default/input';
+import { foobar } from '../export/input';
 
 console.log('BAR is ', constants.BAR);
 console.log('FOO is ', constants.FOO);

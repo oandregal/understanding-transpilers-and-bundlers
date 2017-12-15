@@ -1,4 +1,4 @@
-import { BAR, FOO } from '../export-named/source';
+import { BAR, FOO } from '../export-named/input';
 
 console.log('BAR is ', BAR);
 console.log('FOO is ', FOO);

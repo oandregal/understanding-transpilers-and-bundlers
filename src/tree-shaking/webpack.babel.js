@@ -1,10 +1,9 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  entry: './src/tree-shaking/source.js',
+  entry: './src/tree-shaking/input.js',
   output: {
-    filename: './src/tree-shaking/source.webpack.uglify.js',
+    filename: './src/tree-shaking/output.webpack.babel.js',
   },
   module: {
     rules: [
@@ -14,7 +13,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [new UglifyJsPlugin()],
   resolve: {
     extensions: ['.js'],
     modules: [path.resolve(__dirname)],
