@@ -32,6 +32,7 @@
     "do:import:webpack": "webpack --config src/import/webpack.babel.js",
     "do:react": "run-p do:react:*",
     "do:react:babel": "babel --plugins syntax-jsx,transform-react-jsx src/react-helloworld/input.jsx -o src/react-helloworld/output.babel.js",
+    "do:react:webpack": "webpack --config src/react-helloworld/webpack.babel.js",
     "do:tree-shaking": "run-p do:tree-shaking:*",
     "do:tree-shaking:babel": "babel src/tree-shaking/input.js -o src/tree-shaking/output.babel.js --presets=env",
     "do:tree-shaking:babel-minify": "minify src/tree-shaking/input.js -o src/tree-shaking/output.babel-minify.js",
