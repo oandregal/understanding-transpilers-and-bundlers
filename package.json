@@ -35,12 +35,14 @@
     "do:tree-shaking:babel-minify": "minify src/tree-shaking/input.js -o src/tree-shaking/output.babel-minify.js",
     "do:tree-shaking:rollup": "rollup src/tree-shaking/input.js -o src/tree-shaking/output.rollup.js -f cjs",
     "do:tree-shaking:webpack": "webpack --config src/tree-shaking/webpack.babel.js",
+    "do:tree-shaking:webpack-minify": "webpack --config src/tree-shaking/webpack.babel.minify.js",
     "do:tree-shaking:webpack-uglify": "webpack --config src/tree-shaking/webpack.babel.uglify.js"
   },
   "dependencies": {
     "babel-cli": "6.26.0",
     "babel-loader": "7.1.2",
     "babel-minify": "0.2.0",
+    "babel-minify-webpack-plugin": "0.2.0",
     "babel-preset-env": "1.6.1",
     "google-closure-compiler": "20171112.0.0",
     "npm-run-all": "4.1.2",
