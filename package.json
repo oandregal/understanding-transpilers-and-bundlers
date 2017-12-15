@@ -32,6 +32,7 @@
     "do:import:webpack": "webpack --config src/import/webpack.import.babel.config.js",
     "do:tree-shaking": "run-p do:tree-shaking:*",
     "do:tree-shaking:babel": "babel src/tree-shaking/source.js -o src/tree-shaking/source.babel.js --presets=env",
+    "do:tree-shaking:babel-minify": "minify src/tree-shaking/source.js -o src/tree-shaking/source.babel-minify.js",
     "do:tree-shaking:rollup": "rollup src/tree-shaking/source.js -o src/tree-shaking/source.rollup.js -f cjs",
     "do:tree-shaking:webpack": "webpack --config src/tree-shaking/webpack.tree-shaking.babel.config.js",
     "do:tree-shaking:webpack-uglify": "webpack --config src/tree-shaking/webpack.tree-shaking.babel.uglify.config.js"
@@ -39,6 +40,7 @@
   "dependencies": {
     "babel-cli": "6.26.0",
     "babel-loader": "7.1.2",
+    "babel-minify": "0.2.0",
     "babel-preset-env": "1.6.1",
     "google-closure-compiler": "20171112.0.0",
     "npm-run-all": "4.1.2",
