@@ -1,0 +1,14 @@
+.my-section {
+  color: red; }
+
+body {
+  background-color: blue; }
+
+.my-custom-section {
+  color: #78dcfa; }
+
+.nested-section .my-section {
+  color: red; }
+
+.nested-section body {
+  background-color: blue; }

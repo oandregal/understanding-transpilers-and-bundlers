@@ -1,0 +1,10 @@
+@import 'color-variables';
+@import 'colors';
+
+.my-custom-section {
+  color: $blue-light;
+}
+
+.nested-section {
+  @import 'colors'
+}

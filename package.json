@@ -39,7 +39,6 @@
     "do:react:webpack-production-scope": "webpack --config src/react-helloworld/webpack.babel.prod.scope.js",
     "do:react:webpack-production-scope-uglify": "webpack --config src/react-helloworld/webpack.babel.prod.scope.uglify.js",
     "do:tree-shaking": "run-p do:tree-shaking:*",
-    "do:tree-shaking:css": "node-sass src/tree-shaking-css/input.scss > src/tree-shaking-css/output.scss",
     "do:tree-shaking:babel": "babel src/tree-shaking/input.js -o src/tree-shaking/output.babel.js --presets=env",
     "do:tree-shaking:babel-minify": "minify src/tree-shaking/input.js -o src/tree-shaking/output.babel-minify.js",
     "do:tree-shaking:rollup": "rollup src/tree-shaking/input.js -o src/tree-shaking/output.rollup.js -f cjs",
@@ -48,7 +47,10 @@
     "do:tree-shaking:webpack-minify-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.minify.scopehoisting.js",
     "do:tree-shaking:webpack-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.scopehoisting.js",
     "do:tree-shaking:webpack-uglify": "webpack --config src/tree-shaking/webpack.babel.uglify.js",
-    "do:tree-shaking:webpack-uglify-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.uglify.scopehoisting.js"
+    "do:tree-shaking:webpack-uglify-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.uglify.scopehoisting.js",
+    "do:css": "run-p do:css:*",
+    "do:css:tree-shaking": "node-sass src/css/tree-shaking/input.scss > src/css/tree-shaking/output.scss",
+    "do:css:import": "node-sass src/css/import/input.scss > src/css/import/output.scss"
   },
   "dependencies": {
     "babel-cli": "6.26.0",
