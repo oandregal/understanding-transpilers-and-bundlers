@@ -10,6 +10,9 @@
     "do:arrow-functions": "run-p do:arrow-functions:*",
     "do:arrow-functions:babel": "babel src/arrow-functions/input.js -o src/arrow-functions/output.babel.js --presets=env",
     "do:arrow-functions:closure": "google-closure-compiler src/arrow-functions/input.js --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > src/arrow-functions/output.closure.js",
+    "do:cjs-to-browser": "run-p do:cjs-to-browser:*",
+    "do:cjs-to-browser:rollup": "rollup -c src/cjs-to-browser/rollup.config.js",
+    "do:cjs-to-browser:webpack": "webpack --config src/cjs-to-browser/webpack.babel.js",
     "do:export-default": "run-p do:export-default:*",
     "do:export-default:babel": "babel src/export-default/input.js -o src/export-default/output.babel.js --presets=env",
     "do:export-default:closure": "google-closure-compiler src/export-default/input.js --formatting PRINT_INPUT_DELIMITER --formatting SINGLE_QUOTES --formatting PRETTY_PRINT > src/export-default/output.closure.js",
@@ -71,5 +74,8 @@
     "uglifyjs-webpack-plugin": "1.1.4",
     "webpack": "3.10.0",
     "webpack-bundle-analyzer": "2.9.1"
+  },
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^8.3.0"
   }
 }
