@@ -67,18 +67,23 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var constants = __webpack_require__(1);
+var constantsFactory = __webpack_require__(1);
+var constanst = constantsFactory();
 
 console.log(constants.HELLO + ' ' + constants.WORLD);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {
-  HELLO: 'HELLO',
-  WORLD: 'WORLD'
-};
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return {
+    HELLO: 'HELLO',
+    WORLD: 'WORLD'
+  };
+});
 
 /***/ })
 /******/ ]);

@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/cjs-to-browser/input.js',
+  entry: './src/to-iffe/cjs.input.js',
   output: {
-    filename: './src/cjs-to-browser/output.webpack.babel.js',
+    filename: './src/to-iffe/cjs.output.webpack.babel.js',
   },
   module: {
     rules: [
