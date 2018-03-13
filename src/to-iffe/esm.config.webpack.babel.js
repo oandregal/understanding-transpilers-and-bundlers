@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/esm-to-browser/input.js',
+  entry: './src/to-iffe/esm.input.js',
   output: {
-    filename: './src/esm-to-browser/output.webpack.babel.js',
+    filename: './src/to-iffe/esm.output.webpack.babel.js',
   },
   module: {
     rules: [
