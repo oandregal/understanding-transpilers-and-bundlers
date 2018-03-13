@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/import/input.js',
+  entry: './src/imports/both.input.js',
   output: {
-    filename: './src/import/output.webpack.babel.js',
+    filename: './src/imports/both.output.webpack.babel.js',
   },
   module: {
     rules: [

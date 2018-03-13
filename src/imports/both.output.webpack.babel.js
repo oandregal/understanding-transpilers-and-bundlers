@@ -69,14 +69,15 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__export_default_input__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__export_input__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__exports_default_input__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__exports_named_input__ = __webpack_require__(2);
 
 
 
-console.log('BAR is ', __WEBPACK_IMPORTED_MODULE_0__export_default_input__["a" /* default */].BAR);
-console.log('FOO is ', __WEBPACK_IMPORTED_MODULE_0__export_default_input__["a" /* default */].FOO);
-console.log('FOOBAR is ', __WEBPACK_IMPORTED_MODULE_1__export_input__["a" /* foobar */]);
+console.log('constants.BAR is ', __WEBPACK_IMPORTED_MODULE_0__exports_default_input__["a" /* default */].BAR);
+console.log('constants.FOO is ', __WEBPACK_IMPORTED_MODULE_0__exports_default_input__["a" /* default */].FOO);
+console.log('FOO is ', __WEBPACK_IMPORTED_MODULE_1__exports_named_input__["b" /* FOO */]);
+console.log('BAR is ', __WEBPACK_IMPORTED_MODULE_1__exports_named_input__["a" /* BAR */]);
 
 /***/ }),
 /* 1 */
@@ -95,15 +96,12 @@ const constants = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const constants = {
-  BAR: 1,
-  FOO: 2
-};
+const BAR = 1;
+/* harmony export (immutable) */ __webpack_exports__["a"] = BAR;
 
-const foobar = 3;
-/* harmony export (immutable) */ __webpack_exports__["a"] = foobar;
+const FOO = 2;
+/* harmony export (immutable) */ __webpack_exports__["b"] = FOO;
 
-/* unused harmony default export */ var _unused_webpack_default_export = (constants);
 
 /***/ })
 /******/ ]);
