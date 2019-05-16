@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Test bed for jsx parsing",
   "scripts": {
-    "do:acorn-jsx": "node acorn-jsx.js"
+    "do:acorn-jsx": "node acorn-jsx.js",
+    "do:espree": "node espree.js"
   },
   "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "acorn": "6.1.1",
-    "acorn-jsx": "5.0.1"
+    "acorn-jsx": "5.0.1",
+    "espree": "5.0.1"
   }
 }
