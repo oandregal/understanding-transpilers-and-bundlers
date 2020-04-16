@@ -30,8 +30,6 @@ const sourceFile = program.getSourceFile(filePath);
 sourceFile.fileName = filePath;
 
 sourceFile.statements.forEach((statement) => {
-  console.log("\nnew statement");
-  console.log(statement.jsDoc);
-
-  console.log( 'Note how the typedef is attached as a JSDoc comment to the first function node');
+  console.log("\n");
+  console.log(statement);
 });

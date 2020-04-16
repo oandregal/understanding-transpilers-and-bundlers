@@ -4,6 +4,12 @@
  * @typedef {string} OurCustomType
  */
 
+
+
+function utilityFunction( content ){
+  return content;
+}
+
 /**
  * First Function.
  *
@@ -11,7 +17,7 @@
  * @return {string} Output.
  */
 export function firstFunction(param) {
-  return param;
+  return utilityFunction(param);
 }
 
 /**
@@ -21,7 +27,7 @@ export function firstFunction(param) {
  * @return {OurCustomType} Output.
  */
 function secondFunction(param) {
-  return param;
+  return utilityFunction(param);
 }
 
 export default secondFunction;
