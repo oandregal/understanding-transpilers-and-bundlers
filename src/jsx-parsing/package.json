@@ -9,7 +9,7 @@
   "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "acorn": "6.1.1",
+    "acorn": "6.4.1",
     "acorn-jsx": "5.0.1",
     "espree": "5.0.1"
   }
