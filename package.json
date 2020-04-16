@@ -62,7 +62,12 @@
     "do:tree-shaking:webpack-uglify-scopehoisting": "webpack --config src/tree-shaking/webpack.babel.uglify.scopehoisting.js",
     "do:css": "run-p do:css:*",
     "do:css:tree-shaking": "node-sass src/css/tree-shaking/input.scss > src/css/tree-shaking/output.scss",
-    "do:css:import": "node-sass src/css/import/input.scss > src/css/import/output.scss"
+    "do:css:import": "node-sass src/css/import/input.scss > src/css/import/output.scss",
+    "do:typedef": "run-p do:typedef:*",
+    "do:typedef:babel": "node src/typedef/parser-babel.js src/typedef/example.js",
+    "do:typedef:espree": "node src/typedef/parser-espree.js src/typedef/example.js",
+    "do:typedef:typescript": "node src/typedef/parser-typescript.js src/typedef/example.js",
+    "do:match-comments": "node src/match-comments/babel.js src/match-comments/example.js"
   },
   "dependencies": {
     "babel-cli": "6.26.0",
@@ -85,6 +90,9 @@
     "webpack-bundle-analyzer": "2.9.1"
   },
   "devDependencies": {
-    "rollup-plugin-commonjs": "^8.3.0"
+    "@babel/parser": "7.9.4",
+    "espree": "6.2.1",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "typescript": "3.8.3"
   }
 }
